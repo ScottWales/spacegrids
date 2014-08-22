@@ -1,0 +1,13 @@
+language: python
+
+# Python versions to test
+python:
+    - "2.7"
+
+# Install dependencies & test data
+install:
+    - "wget http://web.science.unsw.edu.au/~wsijp/code/examples.tar.gz -O - | tar xzvf -C $HOME"
+    - "pip install ."
+
+# Run tests
+script: "python tests/tests.py"
