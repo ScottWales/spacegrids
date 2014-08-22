@@ -1,3 +1,13 @@
+# Configuration file for travis-ci.org
+#
+# Travis is a continuous integration service that connects to Github &
+# automatically runs tests when commits are made. To use this on your own
+# branches register at https://travis-ci.org & enable builds for your
+# spacegrids branch.
+#
+# If tests fail you will get an email message as well as a message on any pull
+# requests.
+
 language: python
 
 # Python versions to test
