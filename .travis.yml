@@ -14,7 +14,7 @@ before_install:
 # Install dependencies & test data
 install:
     - wget http://web.science.unsw.edu.au/~wsijp/code/examples.tar.gz -O - | tar xz -C $HOME
-    - conda install --yes python=$TRAVIS_PYTHON_VERSION numpy scipy matplotlib
+    - conda install --yes python=$TRAVIS_PYTHON_VERSION pip numpy scipy matplotlib
     - pip install .
     - pip freeze
 
