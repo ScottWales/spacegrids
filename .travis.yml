@@ -13,8 +13,8 @@ before_install:
 
 # Install dependencies & test data
 install:
-    - mkdir $HOME/my_project
-    - wget http://web.science.unsw.edu.au/~wsijp/code/examples.tar.gz -O - | tar xz -C $HOME/my_project --strip-components=1
+    - mkdir -p $HOME/PROJECTS/my_project
+    - wget http://web.science.unsw.edu.au/~wsijp/code/examples.tar.gz -O - | tar xz -C $HOME/PROJECTS/my_project --strip-components=1
     - conda install --yes python=$TRAVIS_PYTHON_VERSION pip numpy scipy matplotlib
     - pip install .
     - pip freeze
